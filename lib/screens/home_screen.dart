@@ -93,8 +93,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   width: 5,
                 ),
                 InkWell(
-                  onTap: (){
-                    Get.to(()=>const VideoInfoScreen());
+                  onTap: () {
+                    Get.to(() => const VideoInfoScreen());
                   },
                   child: Icon(
                     Icons.arrow_forward,
@@ -291,7 +291,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 context: context,
                 removeTop: true,
                 child: ListView.builder(
-                    itemCount: (info.length.toDouble() / 2).toInt(),
+                    itemCount: info.length.toDouble() ~/ 2,
                     itemBuilder: (_, index) {
                       int a = 2 * index; //0
                       int b = 2 * index + 1; //1
